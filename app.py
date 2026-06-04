@@ -110,25 +110,12 @@ def make_synthetic_data(n=400):
         'losses-storms':       np.random.choice([0,1], n, p=[0.75,0.25]),
         'losses-mudslides':    np.random.choice([0,1], n, p=[0.8,0.2]),
     }
-    df = pd.DataFrame({
-        'education level':       edu,
-        'gender':                np.random.choice(['male','female'], n),
-        'age group':             np.random.choice(['18-30','31-45','46-60','60+'], n),
-        'agricultural financing':fin,
-        'phone ownership':       np.random.choice(['yes','no'], n, p=[0.70,0.30]),
-        'internet use':          net,
-        'farming experience':    np.random.randint(1, 40, n).astype(float),
-        'climate_risk_score':    np.random.randint(0, 6, n).astype(float),
-        'region':                np.random.choice(['Central','Rift Valley','Nyanza','Western','Eastern'], n),
-        'fertiliser_score':      np.random.randint(0, 2, n),
-        'seed_score':            np.random.randint(0, 2, n),
-        'pest_score':            np.random.randint(0, 2, n),
-        'adoption_score':        np.random.randint(0, 4, n),
-        HIGH_ADOPTION_COL:       high_adopt,
-        **risk_cols
-    })
-    return df
-
+    FEATURES = [
+    'education level', 'gender', 'age group',
+    'agricultural financing', 'phone ownership', 'internet use',
+    'farming experience', 'climate_risk_score'
+]
+TARGET = 'high_adoption'
 HIGH_ADOPTION_COL = 'high_adoption'
 
 # ── Sidebar ────────────────────────────────────────────────────────────────────
@@ -158,7 +145,7 @@ with st.sidebar:
     st.markdown("---")
     st.caption("Built by Sarah Owendi · Nairobi, Kenya")
 
-# ── Load data & train ──────────────────────────────────────────────────────────
+# ── Load data & train 
 if uploaded:
     df = load_data(uploaded)
     data_source = "uploaded"
