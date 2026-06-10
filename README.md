@@ -5,7 +5,7 @@
 
 ---
 
-## 📌 Project Overview
+##  Project Overview
 
 This project investigates the factors influencing adoption of modern agricultural practices among smallholder farmers in Kenya, and evaluates how climate risks, financial inclusion, and farmer characteristics affect agricultural resilience.
 
@@ -13,7 +13,7 @@ The work is structured to meet the analytical standards required for agricultura
 
 ---
 
-## 📊 Interactive Dashboard (Tableau)
+##  Interactive Dashboard (Tableau)
 
 Explore the visual story of this analysis on Tableau Public:
 
@@ -26,7 +26,7 @@ The dashboard covers:
 
 ---
 
-## 🗂️ Project Structure
+##  Project Structure
 
 ```
 ├── Agri_Strengthened.ipynb     # Main analysis notebook
@@ -38,7 +38,7 @@ The dashboard covers:
 
 ---
 
-## 🔬 Research Questions
+##  Research Questions
 
 1. Does access to financing increase adoption of modern farming practices?
 2. Which farmer groups are most vulnerable to climate-related losses?
@@ -47,7 +47,7 @@ The dashboard covers:
 
 ---
 
-## 📓 Notebook Summary (`Agri_Strengthened.ipynb`)
+##  Notebook Summary (`Agri_Strengthened.ipynb`)
 
 | Section | Description |
 |---|---|
@@ -65,7 +65,7 @@ The dashboard covers:
 
 ---
 
-## 🚀 Deployment App (`app.py`)
+##  Deployment App (`app.py`)
 
 A Streamlit web app with three tabs:
 
@@ -103,7 +103,7 @@ Then place `model_pipeline.pkl` in the same folder as `app.py`.
 
 ---
 
-## 📦 Dependencies
+##  Dependencies
 
 ```
 pandas
@@ -125,7 +125,7 @@ pip install pandas numpy matplotlib seaborn scipy statsmodels scikit-learn strea
 
 ---
 
-## 🔑 Key Findings
+##  Key Findings
 
 | Finding | Method | Confidence |
 |---|---|---|
@@ -137,7 +137,7 @@ pip install pandas numpy matplotlib seaborn scipy statsmodels scikit-learn strea
 
 ---
 
-## ⚠️ Methodological Notes
+##  Methodological Notes
 
 - This is **observational, cross-sectional data** — associations identified are correlational, not causal
 - A **cluster-RCT design** is proposed in Section 6.3 to establish causal impact of financing on adoption
@@ -146,7 +146,7 @@ pip install pandas numpy matplotlib seaborn scipy statsmodels scikit-learn strea
 
 ---
 
-## 👤 Author
+##  Author
 
 **Sarah Owendi**
 Nairobi, Kenya
